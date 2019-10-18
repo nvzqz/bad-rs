@@ -1,0 +1,16 @@
+[package]
+name = "bad"
+version = "0.0.0"
+authors = ["Nikolai Vazquez <nikvzqz@gmail.com>"]
+license = "Unlicense OR MIT"
+description = "Unlicensed bad ideas."
+homepage = "https://github.com/nvzqz/bad-rs"
+repository = "https://github.com/nvzqz/bad-rs"
+documentation = "https://docs.rs/bad"
+categories = ["no-std"]
+include = ["Cargo.toml", "src", "README*", "CHANGELOG*", "*LICENSE*"]
+
+[features]
+default = ["std"]
+alloc = []
+std = []
