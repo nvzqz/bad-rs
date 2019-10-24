@@ -1,0 +1,10 @@
+language: rust
+matrix:
+  include:
+    - rust: 1.31.0
+    - rust: stable
+    - rust: beta
+    - rust: nightly
+script:
+  - cargo test
+  - cargo test --no-default-features
