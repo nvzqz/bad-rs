@@ -45,8 +45,10 @@ extern crate bad;
 
 This crate exposes the following functionality:
 
-- [`StalinSort`]: a single pass, no-nonsense sorting algorithm with O(n)
-  complexity that removes elements until the value is sorted
+- [`StalinSort`]:
+
+  A single pass, no-nonsense sorting algorithm with O(n) complexity that removes
+  elements until the value is sorted.
 
 ## License
 
