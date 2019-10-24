@@ -6,3 +6,8 @@
 
 #[cfg(feature = "alloc")]
 extern crate alloc;
+
+mod stalin_sort;
+pub use self::{
+    stalin_sort::StalinSort,
+};
