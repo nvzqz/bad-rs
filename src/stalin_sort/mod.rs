@@ -19,8 +19,24 @@ mod vec;
 /// <br>
 /// <i>- mathew ✅ (@mathew@mastodon.social)</i>
 ///
+/// # Examples
+///
+/// These methods can be used similarly to how one would use [`sort`].
+///
+/// An extra `stalin_sorted` method is added for convenience for when the type
+/// implements [`Clone`].
+///
+/// ```
+/// use bad::StalinSort;
+///
+/// let values = vec![1, 2, 3, 0, 42, -2];
+/// assert_eq!(values.stalin_sorted(), [1, 2, 3, 42]);
+/// ```
+///
 /// [Joseph Stalin]: https://en.wikipedia.org/wiki/Joseph_Stalin
 /// [Great Purge]:   https://en.wikipedia.org/wiki/Great_Purge
+/// [`sort`]:        https://doc.rust-lang.org/std/primitive.slice.html#method.sort
+/// [`Clone`]:       https://doc.rust-lang.org/std/clone/trait.Clone.html
 pub trait StalinSort {
     /// Removes unsorted elements until `self` is sorted.
     ///
