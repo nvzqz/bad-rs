@@ -10,6 +10,7 @@ documentation = "https://docs.rs/bad"
 categories = ["no-std"]
 keywords = ["why"]
 include = ["Cargo.toml", "src", "README*", "CHANGELOG*", "*LICENSE*"]
+edition = "2018"
 
 [features]
 default = ["std"]
