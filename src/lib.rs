@@ -32,13 +32,16 @@
 //! [`StalinSort`]: trait.StalinSort.html
 
 #![deny(missing_docs)]
+#![deny(private_in_public)]
 
 #![cfg_attr(not(feature = "std"), no_std)]
 
 #[cfg(feature = "alloc")]
 extern crate alloc;
 
+mod never;
 mod stalin_sort;
 pub use self::{
     stalin_sort::StalinSort,
+    never::Never,
 };
