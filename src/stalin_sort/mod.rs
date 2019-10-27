@@ -29,8 +29,10 @@ mod vec;
 /// ```
 /// use bad::StalinSort;
 ///
+/// # #[cfg(feature = "std")] {
 /// let values = vec![1, 2, 3, 0, 42, -2];
 /// assert_eq!(values.stalin_sorted(), [1, 2, 3, 42]);
+/// # }
 /// ```
 ///
 /// [Joseph Stalin]: https://en.wikipedia.org/wiki/Joseph_Stalin
