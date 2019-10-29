@@ -1,5 +1,5 @@
-//! A collection of (bad) ideas in Rust that you may or may not want to make use of
-//! in your next big project. Courtesy of
+//! A collection of (bad) ideas that you may or may not want use in your next
+//! big project. Courtesy of
 //! [Nikolai Vazquez](https://twitter.com/NikolaiVazquez).
 //!
 //! ## Installation
