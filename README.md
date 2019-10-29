@@ -50,6 +50,11 @@ This crate exposes the following functionality:
   A single pass, no-nonsense sorting algorithm with O(n) complexity that removes
   elements until the value is sorted.
 
+- [`Never`]:
+
+  A type alias to [`!` (never)][never] that works in places `!` doesn't
+  currently in stable Rust.
+
 ## License
 
 This project is released under either:
@@ -60,4 +65,7 @@ This project is released under either:
 
 at your choosing.
 
+[never]: https://doc.rust-lang.org/std/primitive.never.html
+
 [`StalinSort`]: https://docs.rs/bad/0.0.0/bad/trait.StalinSort.html
+[`Never`]:      https://docs.rs/bad/0.0.0/bad/type.Never.html
