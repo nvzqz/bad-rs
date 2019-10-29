@@ -10,7 +10,7 @@ repository = "https://github.com/nvzqz/bad-rs"
 documentation = "https://docs.rs/bad"
 categories = ["no-std"]
 keywords = ["why"]
-include = ["Cargo.toml", "src", "README*", "CHANGELOG*", "*LICENSE*"]
+include = ["Cargo.toml", "src", "README*", "CHANGELOG*", "*LICENSE*", "build.rs"]
 edition = "2018"
 build = "build.rs"
 
