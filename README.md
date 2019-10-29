@@ -32,7 +32,7 @@ used by adding the following to your project's
 
 ```toml
 [dependencies]
-bad = "0.0.0"
+bad = "0.1.0"
 ```
 
 and optionally add this to your crate root (`main.rs` or `lib.rs`):
@@ -67,5 +67,5 @@ at your choosing.
 
 [never]: https://doc.rust-lang.org/std/primitive.never.html
 
-[`StalinSort`]: https://docs.rs/bad/0.0.0/bad/trait.StalinSort.html
-[`Never`]:      https://docs.rs/bad/0.0.0/bad/type.Never.html
+[`StalinSort`]: https://docs.rs/bad/0.1.0/bad/trait.StalinSort.html
+[`Never`]:      https://docs.rs/bad/0.1.0/bad/type.Never.html
