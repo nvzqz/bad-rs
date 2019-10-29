@@ -24,7 +24,7 @@ impl<A: PartialOrd> StalinSort for Vec<A> {
 }
 
 #[cfg(all(test, feature = "std"))]
-mod test {
+mod tests {
     use super::*;
 
     #[test]
@@ -105,5 +105,46 @@ mod test {
             vec![1, 42, 42, 1, 2, 3, 4, 5, 6].stalin_sorted(),
             [1, 42, 42],
         );
+    }
+}
+
+#[cfg(all(test, nightly))]
+mod benches {
+    use super::*;
+
+    macro_rules! ranges {
+        ($($name:ident, $i:ty, $max:expr;)+) => {
+            $(
+                #[bench]
+                fn $name(b: &mut test::Bencher) {
+                    let mut vec: Vec<$i> = (1..=$max).collect();
+                    b.iter(|| {
+                        test::black_box(&mut vec).stalin_sort();
+                        test::black_box(&mut vec);
+                    });
+                }
+            )+
+        };
+    }
+
+    ranges! {
+        range_i032_1_0,      i32,  0;
+        range_i032_1_1,      i32,  1;
+        range_i032_1_10,     i32,  10;
+        range_i032_1_100,    i32,  100;
+        range_i032_1_1000,   i32,  1000;
+        range_i032_1_10000,  i32,  10000;
+        range_i064_1_0,      i64,  0;
+        range_i064_1_1,      i64,  1;
+        range_i064_1_10,     i64,  10;
+        range_i064_1_100,    i64,  100;
+        range_i064_1_1000,   i64,  1000;
+        range_i064_1_10000,  i64,  10000;
+        range_i128_1_0,      i128, 0;
+        range_i128_1_1,      i128, 1;
+        range_i128_1_10,     i128, 10;
+        range_i128_1_100,    i128, 100;
+        range_i128_1_1000,   i128, 1000;
+        range_i128_1_10000,  i128, 10000;
     }
 }

@@ -35,6 +35,10 @@
 #![deny(private_in_public)]
 
 #![cfg_attr(not(feature = "std"), no_std)]
+#![cfg_attr(all(test, nightly), feature(test))]
+
+#[cfg(all(test, nightly))]
+extern crate test;
 
 #[cfg(feature = "alloc")]
 extern crate alloc;

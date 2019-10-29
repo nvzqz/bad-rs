@@ -11,8 +11,12 @@ categories = ["no-std"]
 keywords = ["why"]
 include = ["Cargo.toml", "src", "README*", "CHANGELOG*", "*LICENSE*"]
 edition = "2018"
+build = "build.rs"
 
 [features]
 default = ["std"]
 alloc = []
 std = []
+
+[build-dependencies]
+version_check = "0.1"

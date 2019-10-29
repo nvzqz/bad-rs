@@ -5,6 +5,8 @@ matrix:
     - rust: stable
     - rust: beta
     - rust: nightly
+    - rust: nightly
+      script: cargo bench
 script:
   - cargo test
   - cargo test --no-default-features
