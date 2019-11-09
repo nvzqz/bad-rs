@@ -75,6 +75,27 @@
 /// However, this isn't of much use since `!` turns into `()` in the context
 /// of trait bounds.
 ///
+/// ## Array Item Type
+///
+/// Currently, one can't use `!` as the item type of an array:
+///
+/// ```compile_fail
+/// let array: [!; 0] = [];
+/// ```
+///
+/// The same for slices:
+///
+/// ```compile_fail
+/// let slice: &[!] = &[];
+/// ```
+///
+/// By using `Never` in place of `!` the above works:
+///
+/// ```
+/// let array: [bad::Never; 0] = [];
+/// let slice: &[bad::Never] = &[];
+/// ```
+///
 /// [never]: https://doc.rust-lang.org/std/primitive.never.html
 pub type Never = <F as HasOutput>::Output;
 

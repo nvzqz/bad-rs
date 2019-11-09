@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog] and this project adheres to
 [Semantic Versioning].
 
 ## [Unreleased]
+### Added
+- Array example to `Never` docs
 
 ## [0.1.0] - 2019-10-28
 ### Added
