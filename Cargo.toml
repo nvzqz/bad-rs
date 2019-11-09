@@ -1,7 +1,7 @@
 [package]
 name = "bad"
 readme = "README.md"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Nikolai Vazquez <nikvzqz@gmail.com>"]
 license = "Unlicense OR MIT"
 description = "Unlicensed bad ideas."

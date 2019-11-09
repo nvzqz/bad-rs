@@ -10,7 +10,7 @@
 //!
 //! ```toml
 //! [dependencies]
-//! bad = "0.1.0"
+//! bad = "0.1.1"
 //! ```
 //!
 //! and optionally add this to your crate root (`main.rs` or `lib.rs`):
