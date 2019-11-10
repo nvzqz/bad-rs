@@ -8,18 +8,7 @@ use super::StalinSort;
 impl<A: PartialOrd> StalinSort for Vec<A> {
     #[inline]
     fn stalin_sort(&mut self) {
-        let mut cur = 0;
-        while let Some(item) = self.get(cur + 1) {
-            // If we have `cur + 1`, then `cur` is a valid index. Evidently, the
-            // optimizer isn't able to come to this conclusion, which is why
-            // we're using an unchecked index.
-            let cur_item = unsafe { self.get_unchecked(cur) };
-            if item < cur_item {
-                self.remove(cur + 1);
-            } else {
-                cur += 1;
-            }
-        }
+        self.dedup_by(|a, b| a < b);
     }
 }
 
