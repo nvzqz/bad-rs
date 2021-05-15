@@ -1,9 +1,4 @@
-impl<A: PartialOrd> DivineSort for Vec<A> {
-    #[inline]
-    fn divine_sort(&mut self) {
-        // 🙏  
-    }
-}
+mod vec;
 
 /// An O(1) complexity sort that's based on the power of prayer. Elements are
 /// presumably sorted by divine intervention and contradictory evidence should
