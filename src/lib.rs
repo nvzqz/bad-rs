@@ -43,9 +43,11 @@ extern crate test;
 #[cfg(feature = "alloc")]
 extern crate alloc;
 
+mod divine_sort;
 mod never;
 mod stalin_sort;
 pub use self::{
-    stalin_sort::StalinSort,
+    divine_sort::DivineSort,
     never::Never,
+    stalin_sort::StalinSort
 };
