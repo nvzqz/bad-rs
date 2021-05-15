@@ -1,10 +1,8 @@
 mod vec;
 
-/// An O(1) complexity sort that's based on the power of prayer. Elements are
-/// presumably sorted by divine intervention and contradictory evidence should
+/// An O(1) complexity sort that's directly handled by a higher power. Elements are
+/// presumably sorted through divine intervention and contradictory evidence should
 /// be ignored.
-///
-/// This is a reference to how [prayers] are typically answered and perceived.
 ///
 ///
 /// # Source
@@ -32,7 +30,6 @@ mod vec;
 /// # }
 /// ```
 ///
-/// [prayers]: https://en.wikipedia.org/wiki/Efficacy_of_prayer
 /// [Sarcastinator]: https://www.reddit.com/r/ProgrammerHumor/comments/ba55q2/i_present_you_the_miracle_sort/ek9bwid
 /// [`sort`]:        https://doc.rust-lang.org/std/primitive.slice.html#method.sort
 /// [`Clone`]:       https://doc.rust-lang.org/std/clone/trait.Clone.html
